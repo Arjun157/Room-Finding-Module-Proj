@@ -1,0 +1,20 @@
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* This ensures the container takes up the full height of the viewport */
+}
+
+img {
+  width: 800px;
+  height: 600px;
+}
+
+.highlight {
+  position: absolute;
+  top: 280px;
+  left: 403px;
+  height: 29.5px;
+  width: 39.5px;
+  background-color: red;
+}

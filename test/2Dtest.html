@@ -1,0 +1,42 @@
+<!-- <!DOCTYPE html>
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="2Dtest.css">
+    <script type="module" src="2Dtest.js"></script>
+</head>
+<body>
+    <div class="center-container">
+    <img src="2D_rep.png" alt="2D_rep"  />
+    </div>
+    <div class="highlight"></div>
+</body>
+</html> -->
+
+<html>
+  <head>
+    <script type="text/javascript">
+      function countWCL() {
+        console.log("hello");
+        var textarea = document.getElementById("tarea");
+        var text = textarea.value;
+
+        words = "Words: " + (text.split(/\b\S+\b/).lenth - 1);
+
+        letters =
+          "Characters: " +
+          text.replace(/\s/g, "").length +
+          "/" +
+          text.replace(/\n/g, "").length;
+
+        lines = "lines:" + text.split("\n").length;
+
+        alert(words + "\n" + letters + "\n" + lines);
+      }
+    </script>
+  </head>
+  <form name="cwl">
+    Enter Multi Line Text <br />
+    <textarea name="string" id="tarea" rows="4" cols="30"></textarea>
+    <input type="button" name="sub" value="count" onClick="countWCL()" />
+  </form>
+</html>

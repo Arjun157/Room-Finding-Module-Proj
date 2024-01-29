@@ -1,0 +1,221 @@
+body {
+  font-family: "Kantumruy Pro", sans-serif;
+}
+
+.outerContainer {
+  position: relative;
+  width: 100%;
+  height: 790px;
+  background-color: #0096a1;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.imgContainer {
+  position: relative;
+  overflow: hidden;
+  height: 500px;
+}
+
+.imgContainer::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(to top, #0096a1, rgba(0, 0, 0, 0));
+}
+
+.innerContainer {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.outer-box {
+  background-color: rgba(205, 222, 84, 0.7);
+  height: 600px;
+  width: 1140px;
+  margin-top: 85px;
+  margin-left: 200px;
+  border-radius: 20px;
+  position: relative;
+  box-shadow: 0px 0px 300px 0.1px rgb(94, 94, 94);
+}
+
+.heading {
+  position: absolute;
+  top: 5px;
+  left: 455px;
+  text-shadow: 2px 2px 2px rgb(83, 84, 44);
+  font-size: 40px;
+}
+
+.innerImgCont {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 190px;
+  height: 180px;
+  border: 3px solid #ffffff;
+  background-image: url(img/download.png);
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.inner-box {
+  position: absolute;
+  background-color: rgba(251, 251, 0, 0.8);
+  height: 400px;
+  width: 950px;
+  margin-top: 100px;
+  margin-left: 100px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 40px 0.1px rgb(141, 141, 141);
+}
+
+.textboxesOuter {
+  position: relative;
+}
+
+.textboxesInner {
+  position: absolute;
+  width: 850px;
+  height: 300px;
+  margin-top: 30px;
+  margin-left: 50px;
+}
+
+.textboxesInner p {
+  box-shadow: 0px 0px 10px 0.1px rgb(204, 209, 102);
+  width: 400px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: #a0b9b9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ffffff;
+  font-size: 20px;
+  margin: 9px;
+}
+
+.firstL p {
+  width: 500px;
+}
+
+.secL {
+  display: flex;
+  margin-left: 50px;
+}
+
+.thirdL {
+  display: flex;
+  margin-left: 50px;
+}
+
+.fourthL {
+  display: flex;
+  margin-left: 50px;
+}
+
+#sem {
+  margin-left: 100px;
+}
+
+#room {
+  margin-left: 100px;
+}
+
+.CTV {
+  top: 420px;
+  left: 820px;
+  position: absolute;
+}
+
+.CTVbutton {
+  height: 55px;
+  width: 200px;
+  background: #f57f26;
+  color: black;
+  border-radius: 30px;
+  border: 3px solid #ffffff;
+  font-size: 18px;
+}
+
+.CTVbutton:hover {
+  background-color: rgb(255, 164, 73);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.BTH {
+  top: 530px;
+  left: 930px;
+  position: absolute;
+}
+
+.BTHbutton {
+  border: none;
+  height: 40px;
+  width: 150px;
+  background: #009ad9;
+  color: black;
+  font-size: 15px;
+  border-radius: 50px;
+}
+
+.BTHbutton:hover {
+  background-color: #57d0ff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+body {
+  position: relative;
+}
+
+.center-container {
+  position: absolute;
+  top: 85px;
+  left: 350px;
+}
+
+.center-container img {
+  width: 800px;
+  height: 600px;
+}
+
+.cont {
+  position: relative;
+}
+
+.highlight {
+  position: absolute;
+  height: 29.5px;
+  width: 39.5px;
+  background-color: red;
+}
+
+.back {
+  top: 700px;
+  left: 1100px;
+  position: absolute;
+}
+
+.backInput {
+  height: 55px;
+  width: 200px;
+  background: #f57f26;
+  color: black;
+  border-radius: 30px;
+  border: 3px solid #ffffff;
+  font-size: 18px;
+}
+
+.backInput:hover {
+  background-color: rgb(255, 164, 73);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

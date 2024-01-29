@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <link rel="stylesheet" href="profile.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kadwa&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kameron&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kameron:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var visibility = "<%= visibility %>";
+        var top = "<%= top %>";
+        var left = "<%= left %>";
+        console.log(visibility);
+        var seatingCont = document.querySelector(".seatingCont");
+        seatingCont.style.visibility = visibility;
+        var cont = document.querySelector(".cont");
+        cont.style.boxShadow = " 0px 0px 40px 0.1px rgb(0, 0, 0)";
+
+        var outerContainer = document.querySelector(".outerContainer");
+
+        if (visibility === "visible") {
+          outerContainer.style.filter = "blur(8px)";
+        }
+        var highlight = document.querySelector(".highlight");
+        console.log(highlight);
+        console.log(top);
+        highlight.style.top = top;
+        highlight.style.left = left;
+      });
+    </script>
+  </head>
+  <body style="margin: 0">
+    <div class="outerContainer">
+      <div class="imgContainer">
+        <img src="img/backImg.jpg" />
+      </div>
+      <div class="innerContainer">
+        <div class="outer-box">
+          <h1 class="heading">Student Details</h1>
+          <div class="inner-box">
+            <div class="textboxesOuter">
+              <div class="textboxesInner">
+                <center>
+                  <div class="firstL">
+                    <p name="name">Name : <%= name %></p>
+                  </div>
+                  <div class="secL">
+                    <p name="srn">SRN : <%= SRN %></p>
+                    <p name="sem" id="sem">Semester : <%= semester %></p>
+                  </div>
+                  <div class="thirdL">
+                    <p name="year">Year : <%= year %></p>
+                    <p name="branch" id="room">Branch : <%= branch %></p>
+                  </div>
+                  <div class="fourthL">
+                    <p name="room">Class : <%= className %></p>
+                    <p name="seat" id="room">Seating : <%= seatingA %></p>
+                  </div>
+                </center>
+              </div>
+            </div>
+          </div>
+          <div class="innerImgCont"></div>
+          <form action="/profile" method="post">
+            <div class="CTV">
+              <input
+                type="submit"
+                value="Class Top View"
+                class="CTVbutton"
+                name="buttonType"
+              />
+            </div>
+            <div class="BTH">
+              <input
+                type="submit"
+                value="Back To Home"
+                class="BTHbutton"
+                name="buttonType"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="seatingCont">
+      <div class="center-container">
+        <div class="cont">
+          <img src="img/2D_rep.png" alt="2D_rep" />
+
+          <div class="highlight"></div>
+        </div>
+      </div>
+      <form action="/profile" method="post">
+        <div class="back">
+          <input
+            type="submit"
+            value="Back"
+            class="backInput"
+            name="buttonType"
+          />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
